@@ -23,8 +23,8 @@ dataset = dataset.drop(columns=('is_63_2'))
 dataset = dataset.dropna()
 
 #is_63','is_50_2','is_63_2'
-x = dataset.iloc[0:5000,2:].values
-y = dataset.iloc[0:5000,1].values
+x = dataset.iloc[:,2:].values
+y = dataset.iloc[:,1].values
 
 
 #standarize the data due to string value
